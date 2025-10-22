@@ -1,0 +1,13 @@
+<html>
+            <head>
+                <title>Meus carros</title>
+            </head>
+            {% block content%}
+                <body>
+                    <h1>Carros da PycodeBR</h1>
+                    {% for car in cars %}
+                        <h3>Carro: {{car.brand}} -  {{car.model}} - {{car.model_year}}</h3>                    
+                    {% endfor %}
+                </body>            
+            {% endblock %}            
+        </html>
